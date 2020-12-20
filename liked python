@@ -1,0 +1,20 @@
+import sys
+from PyQt5.QtWidgets import QWidget, QApplication, QRadioButton, QGridLayout
+
+app = QApplication(sys.argv)
+win = QWidget()
+layout = QGridLayout(win)
+
+check = QRadioButton(win)
+check.setText("pilih")
+layout.addWidget(check)
+
+check1 = QRadioButton(win)
+check1.setText("pilih1")
+layout.addWidget(check1)
+
+win.show()
+app.exec_()
+
+if __name__ == '__main__':
+   window()
